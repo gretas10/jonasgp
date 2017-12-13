@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas gp</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+
+    <div class="nav"></div>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a class="active" href="#front">HOME </a>
+        <a href="#bio">BIO</a>
+        <a href="#music">MUSIC</a>
+        <a href="#contact">CONTACT</a>
+
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"><label for="nav-trigger"></label></span>
+    </div>
+    <div class="nav">
+        <a href="#"><img class="sticky" src="pic/logo-13.png" alt="Jonas logo"></a>
+    </div>
+
+
+    <header>
+
+
+
+        <div class="welcome">
+            <section id="front">
+            <img class="home" src="pic/logo-09.png" alt="Jonas logo">
+
+            <div class="info1">
+                <h2 class="artist">Artist ~ </h2>
+                <h2 class="composer">Composer ~</h2>
+                <h2 class="freelancer"> Freelancer</h2>
+            </div>
+                 </section>
+        </div>
+        <video src="pic/rain.mp4" autoplay poster="true" loop>
+    </video>
+
+
+
+    </header>
+
+    <main>
+
+        <img class="arrow" src="pic/down.svg" alt="arrow">
+
+
+<div class="page">
+        <section id="bio">
+
+            <h3>BIOGRAPHY</h3> <br>
+
+
+            <p> <img class="jonas" src="pic/jon1.png" alt="Jonas gp"> Jonas is an original, unique artist who started playing on different kind of instruments at the age of 5 and has been following his passion since then. He never took music lessons as his passion motivated him enough to learn everything by himself. He puts more focus on composing music , but beside that he is extremely creative and has a natural talent in drawing, animating, acting, singing, writing. What is special about him is he naturally feels the art and it comes deeply from his heart. When people ask him why he is doing what he is doing he just simply says "I want to tell a story". He gives a meaning to his music and the audience might take that with themselves in a different way. They translate the music to their own language giving their own meaning to the song.
+            </p>
+
+            <iframe class="intro" width="560" height="315" src="https://www.youtube.com/embed/Au9acZdgC_s?rel=0" allowfullscreen></iframe>
+
+
+        </section>
+
+
+         <section id="music">
+
+            <h3>MUSIC</h3>
+
+            <section id="list"></section>
+
+        <template id="projectTemplate">
+
+        <article class="project">
+            <h1 class="title"></h1>
+             <h4 class="year"></h4>
+              <img class="pro" src="" alt="">
+            <p class="description"></p>
+          <h4 class="year"></h4>
+             <iframe class="soundcloud" scrolling="yes" height="350" width ="350" src=""></iframe>
+
+        </article>
+
+    </template>
+ </section>
+
+
+
+
+        <section id="contact">
+    <h3>CONTACT</h3> <br>
+
+
+
+    <form action="post" method="post" class="jform">
+        <h4>Send direct e-mail to Jonas:
+        </h4>
+        <label>
+        <span>Name</span>
+        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+    </label>
+
+        <label>
+        <span>E-mail</span>
+        <input id="email" type="email" name="email" placeholder="Email Address" />
+    </label>
+
+        <label>
+        <span>Subject</span>
+        <input id="sub" type="subject" name="subject"/>
+    </label>
+        <label>
+        <span>Message</span>
+        <textarea id="message" name="message" placeholder="Your Message to Jonas"></textarea>
+    </label>
+
+        <label>
+        <span>&nbsp;</span>
+        <input type="button" class="button" value="Send" />
+    </label>
+    </form>
+
+
+    <div class="letter">
+        <p> Email address:</p>
+        <p class="inf"> gustafsonmusik@gmail.com </p>
+        <p>Phone number:</p>
+        <p class="inf"> +45 42 34 75 55</p>
+    </div>
+
+
+    <div class="social">
+
+
+        <a href="#"><i class="fa fa-facebook" style="font-size:30px;color:#F9EDD7"></i></a>
+
+        <a href="https://www.youtube.com/user/Gustafsonmusik" class="social-icon"> <i class="fa fa-youtube" style="font-size:30px;color:#F9EDD7"></i></a>
+
+                <a href="https://soundcloud.com/user-512011442"><i class="fa fa-soundcloud" style="font-size:30px;color:#fffbef"></i></a>
+
+                     <a href="#"><i class="fa fa-instagram" style="font-size:30px;color:#F9EDD7"></i></a>
+    </div>
+
+</section>
+
+
+</div>
+
+
+        <button onclick="myFunction()"></button>
+        <p id="demo"></p>
+
+        <p class="copyright"> Copyright © 2017 JonasGp</p>
+
+
+    </main>
+
+
+</body>
+
+</html>
