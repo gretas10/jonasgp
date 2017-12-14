@@ -22,7 +22,7 @@ $(function () {
 $(function () {
      $('.sticky').click(function () {
          $('html, body').animate({
-             scrollTop: $('.welcome').offset().top
+             scrollTop: $('.nav').offset().top
          }, 1000);
          return false;
      });

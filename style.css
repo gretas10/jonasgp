@@ -67,12 +67,6 @@ body {
 
         }
 
-.hidden{
-     opacity:0;
-}
-.visible{
-     opacity:1;
-}
 
 
 
@@ -96,12 +90,6 @@ video {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
-
-#myAudio {
-    display: none;
-}
-
-
 
 
 
@@ -279,7 +267,7 @@ section {
 
 /* DESKTOP */
 
-@media only screen and (min-width: 768px) {
+@media only screen  and (min-width : 1024px) {
 
 
     .jform{
@@ -561,7 +549,7 @@ section {
         float: left;
         display: block;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 15px;
         position: relative;
         font-family: Avenir;
         letter-spacing: 3px;
@@ -574,6 +562,7 @@ section {
         transition: all 0.5s ease-in;
         overflow: hidden;
         display: block;
+        color: #818181;
 
     }
     .sidenav .closebtn {
@@ -921,7 +910,7 @@ width: 100%;
         width: 85%;
         text-align: left;
         align-content: center;
-        margin-top: 36%;
+        margin-top: 6%;
         margin-left: 8%;
         margin-bottom: 10%;
     }
@@ -970,7 +959,7 @@ width: 100%;
         height: 70px;
         overflow: hidden;
         width: 100%;
-        padding-left: 55%;
+        padding-left: 50%;
         position: fixed;
         z-index: 999;
 
@@ -978,8 +967,8 @@ width: 100%;
 
     .sidenav a {
         color: #fff;
-        margin-left: 6%;
-        padding: 1.7em 1em 2em 0em;
+        margin-left: 3%;
+        padding: 1.7em 1em 2em 1em;
         float: left;
         display: block;
         text-decoration: none;
@@ -996,6 +985,7 @@ width: 100%;
         transition: all 0.5s ease-in;
         overflow: hidden;
         display: block;
+         color: #818181;
 
     }
     .sidenav .closebtn {
@@ -1087,8 +1077,9 @@ width: 100%;
     }
 
     .intro {
-        margin-top: -35%;
+        margin-top: -45%;
         width: 100%;
+        height: 40%;
     }
 
     .page{
@@ -1127,14 +1118,12 @@ width: 100%;
 @media (max-width: 600px) {
 
 
-
-
     /* Video in the header */
     video {
         width: 100%;
         overflow: hidden;
         position: fixed;
-        top: 50%;
+        top: 80%;
         left: 50%;
         min-width: 100%;
         min-height: 100%;
@@ -1162,17 +1151,16 @@ width: 100%;
         text-align: left;
     }
 
-    .welcome {
+
+     .welcome {
 
         text-align: center;
         width: 100%;
         z-index: 9;
         color: white;
-        top: 250px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        margin-top: -60%;
     }
+
     h1 {
         text-align: center;
         font-size: 25px;
@@ -1182,8 +1170,8 @@ width: 100%;
     h2 {
         color: #496A8E;
         text-align: center;
-        margin-top: 2%;
-        font-size: 12px;
+        margin-top: 50%;
+        font-size: 11px;
         display: inline;
         font-family: Avenir;
         letter-spacing: 1px;
@@ -1196,7 +1184,7 @@ width: 100%;
         float: right;
         width: 150px;
         height: 45px;
-        z-index: 17;
+        z-index: 1000;
         left: 3px;
         top: 6px;
     }
@@ -1297,7 +1285,7 @@ width: 100%;
         clip: rect(0, 0, 0, 0);
     }
 
-    .nav {
+    #nav {
         background-color: rgba(10, 27, 44, .9);
         height: 12%;
         overflow: hidden;
@@ -1305,16 +1293,16 @@ width: 100%;
         padding-left: 55%;
         position: fixed;
         z-index: 999;
-        display: inline;
     }
 
-    main {
+   main {
 
-        padding: 1em;
-        padding-top: 150px;
+        padding-top: 50%;
         background-color: rgba(214, 202, 177, 0.3);
         font-family: Avenir;
     }
+
+
 
 
     h3 {
@@ -1345,7 +1333,7 @@ width: 100%;
         padding-top: 2em;
         width: 100%;
         align-content: center;
-        margin-top: 1%;
+        margin-top: 15%;
 
 
     }
@@ -1363,18 +1351,6 @@ width: 100%;
 
     }
 
-
-    .professor {
-        margin-top: -550px;
-        width: 100%;
-        height: 50%;
-        padding: 5px;
-    }
-
-    .boardingpass {
-        margin-top: -950px;
-        padding: 5px;
-    }
 
     #contact {
         padding-top: 1em;
@@ -1446,7 +1422,7 @@ width: 100%;
 
 
     .intro {
-        margin-top: -20%;
+        margin-top: -30%;
         transform: translate(-50%, -50%);
         width: 90%;
         height: 20%;
@@ -1456,7 +1432,6 @@ width: 100%;
     }
 
     .arrow{
-    position: absolute;
     top: 90%;
     width: 10%;
     align-content: center;
