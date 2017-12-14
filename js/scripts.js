@@ -18,18 +18,15 @@ $(function () {
 
 
 
-
 $(function () {
      $('.sticky').click(function () {
          $('html, body').animate({
-             scrollTop: $('.nav').offset().top
+             scrollTop: $('#nav').offset().top
          }, 1000);
          return false;
      });
 
  });
-
-
 
 
 //highlight+scrolling found on CodePen
@@ -97,8 +94,4 @@ jQuery(document).ready(function() {
      document.getElementById("mySidenav").style.width = "0";
      document.getElementById("main").style.marginLeft = "0";
  }
-
-
-
-
 
