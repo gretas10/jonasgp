@@ -38,8 +38,6 @@ function showProjects(data){
 
        soundcloud.innerHTML = theProject.content.rendered;
 
-console.log(theProject.content.rendered);
-
 
 
 
