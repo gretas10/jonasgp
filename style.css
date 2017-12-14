@@ -102,16 +102,7 @@ video {
 }
 
 
-.welcome {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 9;
-    color: white;
-    top: 390px;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
+
 
 
 article {
@@ -205,7 +196,93 @@ body {
 
 
 
-.jform{
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: table;
+
+}
+
+
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+
+}
+
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 768px) {
+
+
+    .jform{
     float: left;
     max-width: 55%;
     background: none;
@@ -308,88 +385,16 @@ body {
     padding: 15px;
 }
 
-*,
-:after,
-:before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    height: 100vh;
+    .welcome {
+    position: absolute;
+    text-align: center;
     width: 100%;
-    display: table;
-
+    z-index: 9;
+    color: white;
+    top: 390px;
+    left: 55%;
+    transform: translate(-50%, -50%);
 }
-
-
-.scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -16px;
-    display: block;
-    width: 32px;
-    height: 32px;
-    border: 2px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
-    z-index: 2;
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-@keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-
-
-}
-
-
-
-/* DESKTOP */
-
-@media only screen and (min-width: 768px) {
 
     .copyright {
         width: 100%;
@@ -553,7 +558,7 @@ section {
         color: #fff;
         margin-left: 6%;
         padding: 1.7em 1em 2em 1em;
-        float: left;
+        float: right;
         display: block;
         text-decoration: none;
         font-size: 16px;
@@ -589,13 +594,13 @@ section {
     /*logo*/
     img.sticky {
         position: fixed;
-        top: 103px;
+        top: 100px;
         float: left;
         width: 170px;
         margin-top: -90px;
         z-index: 9999;
         left: 10px;
-        height: 8%;
+        height: 50px;
     }
 
     img.home {
@@ -659,7 +664,7 @@ section {
     }
 
     .intro {
-        margin-top: -200px;
+        margin-top: -30%;
         width: 100%;
         height: 65%;
     }
@@ -695,7 +700,428 @@ width: 100%;
 
 }
 
+/* TABLET*/
 
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+    .jform{
+    float: left;
+    max-width: 45%;
+    background: none;
+    font: 15px Avenir;
+    color: #999;
+
+}
+.jform h3 {
+    font: 18px Avenir;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    color: #C4C2C2;
+    padding-bottom: 30px;
+}
+
+.jform label {
+    display: block;
+    margin: 10px 0px 10px;
+
+}
+.jform label>span {
+    float: left;
+    width: 25% ;
+    text-align: right;
+    padding-right: 9px;
+    color:#C4C2C2;
+}
+.jform input[type="text"], .jform input[type="email"], .jfrom textarea, .jform input[type="subject"]{
+
+    width: 70%;
+    padding: 3px 0px 3px 5px;
+    margin-top: 2px;
+    margin-right: 6px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: solid 1px #fff;
+    background: none;
+    height: 30px;
+    line-height:15px;
+    outline: 0;
+    color: #fff;
+
+}
+.jform textarea{
+    height:100px;
+    border: solid 1px #fff;
+    padding: 5px 0px 0px 5px;
+    border-radius: 4px;
+    width: 70%;
+    background: none;
+}
+.jform .button {
+
+    background-color: #C4C2C2;
+    border-radius:9px;
+    display:inline-block;
+    font-family: Avenir;
+    color: #02192D;
+    font-size:14px;
+    font-weight:bold;
+    height: 35px;
+    line-height: 30px;
+    width:100px;
+    text-decoration:none;
+    text-align: center;
+
+}
+.jform .button:hover {
+
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.jform .button:active {
+    position:relative;
+    top:1px;
+
+}
+.jform select {
+    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+   appearance:none;
+    -webkit-appearance:none;
+   -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    line-height: 15px;
+    height: 30px;
+}
+
+.letter{
+    padding-top: 30%;
+    font-family: "Raleway";
+    font-size: 17px;
+    color: #C4C2C2;
+}
+
+.inf{
+    color: #ffff;
+    padding: 15px;
+}
+
+    .welcome {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+    color: white;
+    top: 280px;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+  .copyright {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 10%;
+    }
+
+    .social {
+    float: right;
+    animation: pulse 2s;
+    animation-iteration-count: 4;
+    padding-top: 5em;
+}
+
+
+
+    ul a {
+        padding: 20px;
+        font-size: 60px;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        display: inline;
+    }
+
+    h1 {
+        color: #213F60;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    h2 {
+        color: #496A8E;
+        text-align: center;
+        font-size: 13px;
+        display: inline;
+        font-family: Avenir;
+        letter-spacing: 2px;
+
+    }
+
+    h3 {
+        color: #F4E8DF;
+        text-align: center;
+        font-size: 23px;
+        padding-top: 15%;
+        padding-bottom: 4%;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+
+      h4 {
+        color: #F4E8DF;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    .description{
+        color: #A3B6C4;
+        text-align: left;
+        font-size: 15px;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        width: 50%;
+        float: right;
+        padding: 2em;
+        font-family: Avenir;
+
+    }
+
+
+    a i {
+        padding: 0.5em;
+        text-align: center;
+
+    }
+
+
+    a i:hover {
+        opacity: 0.5;
+        transition: all 0.8s ease;
+    }
+
+    #tagmenu {
+        margin-top: 10%;
+    }
+
+    #bio {
+        color: #A3B6C4;
+        padding-top: 2em;
+        text-align: center;
+        margin-top: 15%;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        width: 85%;
+        text-align: left;
+        align-content: center;
+        margin-top: 36%;
+        margin-left: 8%;
+        margin-bottom: 10%;
+    }
+
+    #bio p {
+        color: #A3B6C4;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        font-family: Avenir;
+    }
+
+
+
+    #contact {
+        text-align: center;
+        align-content: center;
+        color: #fff;
+        padding: 1em 2em 3em 2em;
+        text-align: center;
+        width: 100%;
+        align-content: center;
+        margin-left: -1%;
+        margin-bottom: 10%;
+
+    }
+
+    #music {
+        color: #A3B6C4;
+        text-align: center;
+        align-content: center;
+        color: #fff;
+        width: 100%;
+        margin-top: 40%;
+        margin-bottom: 10%;
+        font-family: Avenir;
+
+    }
+
+
+
+    /* The side navigation menu */
+    .sidenav {
+        background-color: rgba(10, 27, 44, .9);
+        height: 70px;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 30%;
+        position: fixed;
+        z-index: 999;
+
+    }
+
+    .sidenav a {
+        color: #fff;
+        margin-left: 4%;
+        padding: 1.7em 1em 2em 1em;
+        float: right;
+        display: block;
+        text-decoration: none;
+        font-size: 13px;
+        position: relative;
+        font-family: Avenir;
+        letter-spacing: 3px;
+        top: 5px;
+
+
+    }
+
+    .sidenav a:hover {
+         text-shadow: 0.7px 0.7px 0.5px #fff;
+        transition: all 0.5s ease-in;
+        overflow: hidden;
+        display: block;
+
+    }
+    .sidenav .closebtn {
+        display: none;
+    }
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 60px;
+    }
+    /*logo*/
+    img.sticky {
+        position: fixed;
+        top: 103px;
+        float: left;
+        width: 170px;
+        margin-top: -90px;
+        z-index: 9999;
+        left: 10px;
+        height: 45px;
+    }
+
+    img.home {
+        width: 45%;
+        margin-top: -5%;
+        z-index: 1;
+    }
+
+
+
+    .jonas {
+        width: 70%;
+        padding: 0em 1em 1em 0em;
+
+
+    }
+    .info {
+        text-align: center;
+        font-size: 12px;
+        z-index: -1;
+
+
+    }
+
+    .info1 {
+        margin-top: -26%;
+        text-align: center;
+        z-index: -1;
+        color: #0C2335;
+        margin-right: 7%;
+
+    }
+
+
+
+
+    .boardingpass {
+        margin-top: -1000px;
+        margin-right: 300px;
+        width: 40%;
+    }
+
+    .letter {
+        float: right;
+        margin-top: -20%;
+        width: 40%
+    }
+    form {
+        width: 55%;
+    }
+
+    .together {
+        margin-left: 8%;
+
+    }
+
+    main {
+
+        padding-top: 50%;
+        background-color: rgba(214, 202, 177, 0.3);
+        font-family: Avenir;
+    }
+
+    .intro {
+        margin-top: -35%;
+        width: 100%;
+    }
+
+    .page{
+background-color: rgba(2, 25, 45, 0.9);
+        margin: 2em 4em 1em 4em;
+}
+
+    .title{
+color: white;
+        font-size: 20px;
+}
+
+    .year{
+color: white;
+        font-size: 20px;
+}
+    .pro {
+width: 50%;
+}
+
+    .project {
+width: 100%;
+        padding: 0em 2em 0em 3em;
+}
+
+   .soundcloud{
+       margin-bottom: 5%;
+width: 100%;
+}
+
+
+}
 
 /* MOBILE VERSION*/
 
@@ -746,6 +1172,8 @@ width: 100%;
         top: 250px;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding-top: 100%;
+        margin-left: 50%;
     }
     h1 {
         text-align: center;
@@ -760,7 +1188,7 @@ width: 100%;
         font-size: 12px;
         display: inline;
         font-family: Avenir;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
 
     }
 
@@ -769,10 +1197,10 @@ width: 100%;
     img.sticky {
         float: right;
         width: 150px;
-        height: 8%;
+        height: 45px;
         z-index: 17;
         left: 3px;
-        top: 12px;
+        top: 6px;
     }
 
 
@@ -815,7 +1243,6 @@ width: 100%;
 
     /* The navigation menu links */
     .sidenav a {
-        color: #F4E8DF;
         padding: 8px;
         text-decoration: none;
         font-size: 18px;
@@ -854,12 +1281,12 @@ width: 100%;
         /* critical positioning styles */
         position: fixed;
         right: 25px;
-        top: 18px;
+        top: 15px;
         z-index: 9999;
         background-image: url(burger.png);
         /* non-critical apperance styles */
-        height: 30px;
-        width: 35px;
+        height: 25px;
+        width: 30px;
         cursor: pointer;
         background-size: contain;
 
@@ -895,7 +1322,7 @@ width: 100%;
     h3 {
         color: #F4E8DF;
         text-align: center;
-        font-size: 17px;
+        font-size: 15px;
         padding-top: 15%;
         padding-bottom: 5%;
         letter-spacing: 2px;
@@ -1021,12 +1448,11 @@ width: 100%;
 
 
     .intro {
-        position: absolute;
-        margin-top: -350px;
-        left: 50%;
+        margin-top: -20%;
         transform: translate(-50%, -50%);
         width: 90%;
-        height: 40%;
+        height: 20%;
+        margin-left: 50%;
 
 
     }
@@ -1049,10 +1475,10 @@ width: 100%;
 
     .jform{
     float: left;
-    max-width: 100%;
-    background: none;
+    width: 100%;
     font: 13px "Avenir";
     color: #999;
+        display: block;
 
 }
 .jform h4 {
@@ -1065,20 +1491,22 @@ width: 100%;
 .jform label {
     display: block;
     margin: 10px 0px 10px;
+    text-align: center;
 
 }
 .jform label>span {
     width: 100% ;
     text-align: center;
     color:#C4C2C2;
-    font-size: 16px;
-    margin-bottom: 4%;
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-right: 2%;
 }
 .jform input[type="text"], .jform input[type="email"], .jfrom textarea, .jform input[type="subject"]{
 
-    width: 70%;
+    width: 90%;
     padding: 3px 0px 3px 5px;
-    margin-top: 2px;
+    margin-top: 10px;
     margin-right: 6px;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -1095,8 +1523,9 @@ width: 100%;
     border: solid 1px #fff;
     padding: 5px 0px 0px 5px;
     border-radius: 4px;
-    width: 70%;
+    width: 90%;
     background: none;
+    margin-top: 10px;
 }
 .jform .button {
 
@@ -1112,8 +1541,8 @@ width: 100%;
     width:80px;
     text-decoration:none;
     text-align:center;
-    margin-top: -100px;
     margin-bottom: 50px;
+    margin-right: 5%;
 
 
 }
@@ -1142,7 +1571,7 @@ width: 100%;
 
 .letter{
     padding-top: 30em;
-    font-family: "Raleway";
+    font-family: "Avenir";
     font-size: 14px;
     color: #C4C2C2;
     display: block;
@@ -1152,16 +1581,10 @@ width: 100%;
     color: #ffff;
     padding: 1em 1em 1em 1em;
 }
-    .down{
-        margin-top: -30%;
-        text-align: center;
-      float: right;
-      width: 7%;
-
-    }
 
        .page{
 background-color: rgba(2, 25, 45, 0.9);
+
 }
 
 
