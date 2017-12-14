@@ -664,7 +664,7 @@ section {
     .intro {
          margin-top: 40px;
         width: 100%;
-        height: 350px;
+        height: 450px;
     }
 
     .page{
@@ -1090,7 +1090,7 @@ width: 100%;
     .intro {
          margin-top: 50px;
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
 
     .page{
@@ -1268,6 +1268,8 @@ width: 100%;
         font-size: 36px;
         margin-left: 50px;
     }
+
+
 
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     body {
