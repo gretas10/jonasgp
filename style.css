@@ -664,9 +664,11 @@ section {
     }
 
     .intro {
-        margin-top: -25%;
+         margin-top: -90px;
+        transform: translate(-50%, -50%);
         width: 100%;
-        height: 65%;
+        height: 55%;
+        margin-left: 50%;
     }
 
     .page{
@@ -1092,9 +1094,11 @@ width: 100%;
     }
 
     .intro {
-        margin-top: -30%;
+         margin-top: -100px;
+        transform: translate(-50%, -50%);
         width: 100%;
-        height: 55%;
+        height: 50%;
+        margin-left: 50%;
     }
 
     .page{
@@ -1324,7 +1328,7 @@ width: 100%;
     h3 {
         color: #F4E8DF;
         text-align: center;
-        font-size: 17px;
+        font-size: 18px;
         padding-top: 15%;
         padding-bottom: 5%;
         letter-spacing: 3px;
@@ -1440,14 +1444,13 @@ width: 100%;
 
 
     .intro {
-        margin-top: -70%;
+        margin-top: -750px;
         transform: translate(-50%, -50%);
         width: 90%;
         height: 20%;
         margin-left: 50%;
-
-
     }
+
 
     .arrow{
     top: 90%;
