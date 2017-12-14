@@ -498,7 +498,6 @@ section {
         align-content: center;
         margin-top: 6%;
         margin-left: 8%;
-        margin-bottom: 10%;
     }
 
     #bio p {
@@ -929,7 +928,6 @@ width: 100%;
         align-content: center;
         margin-top: 6%;
         margin-left: 8%;
-        margin-bottom: 10%;
     }
 
     #bio p {
@@ -962,7 +960,7 @@ width: 100%;
         align-content: center;
         color: #fff;
         width: 100%;
-        margin-top: 40%;
+        margin-top: 10%;
         margin-bottom: 10%;
         font-family: Avenir;
 
@@ -1365,7 +1363,6 @@ width: 100%;
         padding: 1em;
         text-align: left;
         width: 100%;
-        height: 200vh;
         align-content: center;
         margin-top: 10%;
         font-family: Avenir;
@@ -1398,7 +1395,7 @@ width: 100%;
         color: #fff;
         text-align: center;
         font-family: Avenir;
-        margin-top: -100px;
+        margin-top: 10px;
 
 
     }
@@ -1447,9 +1444,9 @@ width: 100%;
 
         transform: translate(-50%, -50%);
         width: 100%;
-        height: 20%;
+        height: 25%;
         margin-left: 50%;
-        margin-top: 150px
+        margin-top: 150px;
     }
 
 
