@@ -645,6 +645,7 @@ section {
         float: right;
         margin-top: -20%;
         font-family: Avenir;
+        width: 40%;
     }
     form {
         width: 55%;
@@ -799,6 +800,7 @@ width: 100%;
     font-family: Avenir;
     font-size: 17px;
     color: #C4C2C2;
+
 }
 
 .inf{
