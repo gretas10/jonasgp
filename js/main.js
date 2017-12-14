@@ -36,9 +36,9 @@ function showProjects(data){
 
      // document.getElementById('soundcloud').src = theProject.content.rendered;
 
-       soundcloud.setAttribute("src", theProject.content.rendered);
+       soundcloud.innerHTML = theProject.content.rendered;
 
-
+console.log(theProject.content.rendered);
 
 
 

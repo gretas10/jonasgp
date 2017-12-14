@@ -1,11 +1,7 @@
-@font-face {
-    font-family: Avenir;
-    src: url('avenir.ttf');
-}
 
 @font-face {
-    font-family: Avenir1;
-    src: url('avenirlight.ttf');
+    font-family: Avenir;
+    src: url(avenir.otf);
 }
 
 
@@ -22,8 +18,6 @@ html {
 
 body {
     position: 100%;
-    background-color: #fff;
-    font-family: Avenir;
 
 }
 
@@ -393,13 +387,9 @@ section {
 
 
 
-
-
-
-
 /* DESKTOP */
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
     .copyright {
         width: 100%;
@@ -465,7 +455,7 @@ section {
 
     .description{
         color: #A3B6C4;
-        text-align: justify;
+        text-align: left;
         font-size: 15px;
         padding-top: 2%;
         padding-bottom: 5%;
@@ -497,8 +487,6 @@ section {
         color: #A3B6C4;
         padding-top: 2em;
         text-align: center;
-        text-align: center;
-        align-content: center;
         margin-top: 15%;
         color: #fff;
         padding: 1em;
@@ -513,7 +501,7 @@ section {
 
     #bio p {
         color: #A3B6C4;
-        text-align: justify;
+        text-align: left;
         width: 100%;
         height: 100%;
         align-content: center;
@@ -601,11 +589,13 @@ section {
     /*logo*/
     img.sticky {
         position: fixed;
-        top: 93px;
+        top: 103px;
         float: left;
-        width: 160px;
+        width: 170px;
         margin-top: -90px;
         z-index: 9999;
+        left: 10px;
+        height: 8%;
     }
 
     img.home {
@@ -698,24 +688,10 @@ width: 100%;
 }
 
    .soundcloud{
-       margin-top: 5%;
        margin-bottom: 5%;
 width: 100%;
 }
 
-     iframe {
-        margin-top: -10px;
-        width: 100%;
-        padding: 5px;
-         border: none;
-    }
-
-    .professor {
-        margin-top: 50px;
-        width: 100%;
-        height: 50%;
-        padding: 5px;
-    }
 
 }
 
@@ -792,11 +768,11 @@ width: 100%;
     /*logo*/
     img.sticky {
         float: right;
-        width: 130px;
-        height: 10%;
+        width: 150px;
+        height: 8%;
         z-index: 17;
-        left: 1px;
-        top: 6px;
+        left: 3px;
+        top: 12px;
     }
 
 
@@ -878,12 +854,12 @@ width: 100%;
         /* critical positioning styles */
         position: fixed;
         right: 25px;
-        top: 22px;
+        top: 18px;
         z-index: 9999;
-        background-image: url(burg.png);
+        background-image: url(burger.png);
         /* non-critical apperance styles */
-        height: 20px;
-        width: 30px;
+        height: 30px;
+        width: 35px;
         cursor: pointer;
         background-size: contain;
 
@@ -952,7 +928,7 @@ width: 100%;
     #bio p {
         color: #A3B6C4;
         padding: 1em;
-        text-align: justify;
+        text-align: left;
         width: 100%;
         height: 200vh;
         align-content: center;
@@ -962,12 +938,6 @@ width: 100%;
 
     }
 
-
-    iframe {
-        margin-top: -1300px;
-        width: 100%;
-        padding: 5px;
-    }
 
     .professor {
         margin-top: -550px;
@@ -1210,7 +1180,7 @@ width: 100%;
 }
 
    .soundcloud{
-       margin-top: 20%;
+       margin-top: 5%;
 width: 100%;
 }
 
@@ -1224,7 +1194,7 @@ color: white;
     .description{
 color: white;
         font-size: 15px;
-        text-align: justify;
+        text-align: left;
         padding-top: 2em;
         color: #A3B6C4;
         font-family: Avenir;
