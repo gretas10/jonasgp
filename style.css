@@ -604,8 +604,8 @@ section {
         width: 55%;
         padding: 0em 2em 1em 0em;
         float: left;
-
     }
+
     .info {
         text-align: center;
         font-size: 12px;
@@ -653,14 +653,14 @@ section {
     }
 
     .intro {
-        margin-top: -30%;
+        margin-top: -25%;
         width: 100%;
         height: 65%;
     }
 
     .page{
 background-color: rgba(2, 25, 45, 0.9);
-        margin: 5em 10em 1em 10em;
+        margin: 5em 7em 1em 7em;
 }
 
     .title{
@@ -1022,13 +1022,12 @@ width: 100%;
     }
 
 
-
-    .jonas {
-        width: 70%;
+.jonas {
+        width: 55%;
         padding: 0em 1em 1em 0em;
-
-
+        float: left;
     }
+
     .info {
         text-align: center;
         font-size: 12px;
@@ -1077,9 +1076,9 @@ width: 100%;
     }
 
     .intro {
-        margin-top: -45%;
+        margin-top: -30%;
         width: 100%;
-        height: 40%;
+        height: 55%;
     }
 
     .page{
